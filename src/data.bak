@@ -1,0 +1,57 @@
+
+export const days: Day[] = [
+  {
+    title: "#1",
+    warmup: "",
+    main: "Backsquat 3 rm In 6 set. ",
+    secondary: "\"5 rounds for time of:\r\n200-meter farmers carry\r\n20 deficit push-ups, hands on dumbbells\r\n10 push jerks 50/35\r\n"
+  },
+  {
+    title: "#2",
+    warmup: "",
+    main: null,
+    secondary: "Lee\r\n\r\n5 rounds for time of:\r\n1 Deadlift 155/100\r\n3 Squat clean 85/55\r\n5 Push jerk 85/55\r\n3 Muscle-ups\r\n1 Rope climb"
+  },
+  {
+    title: "#3",
+    warmup: "",
+    main: null,
+    secondary: "\"DT\" \r\n5 rounds:\r\n12 Deadlift\r\n9 Hang power clean\r\n6 Push jerk \r\nWeight: 70/47,5kg\r\n"
+  },
+  {
+    title: "#4",
+    warmup: "",
+    main: "Deadlift 6 Set x 3 rep increas 2,5-5 kg from last week  (same weight all set)",
+    secondary: "\"CROSSFIT STRONGMAN\r\nBurpee \"\"Grace\"\" \r\n\r\n30 Rounds For Time  \r\n1 x Clean & Jerk @ BW\r\n1 x Burpee"
+  },
+  {
+    title: "#5",
+    warmup: "",
+    main: "E75s x 10\r\n1 hang power clean\r\n1 Power jerk/squat jerk \r\n1 Split jerk  ",
+    secondary: "For time:\r\nShoulder press, 10 reps\r\nOverhead squat, 15 reps\r\nPush press, 20 reps\r\nFront squat, 25 reps\r\nPush jerk, 30 reps\r\nBack squat, 35 reps\r\nWeight: 52,5/35"
+  },
+  {
+    title: "#6",
+    warmup: "",
+    main: "Rumänska marklyft \r\n5x5",
+    secondary: "10 2-minute rounds of:\r\n150 meter \r\nMax-rep 35/25 pound. dumbbell power clean and jerks"
+  },
+  {
+    title: "#7",
+    warmup: "",
+    main: "Emom 12 min \r\n4 clean and jerk TNG (Flöde)",
+    secondary: "AMRAP 4:\r\n3 rounds:\r\n12 Deadlifts 42,5/30\r\n9 Hang Power Cleans\r\n6 Push Jerks\r\nthen\r\nMax reps Wallball 20/14 in time Remaining\r\nrest 4:00\r\nAMRAP 4:\r\n2 rounds:\r\n12 Deadlifts 60/42,5\r\n9 Hang Power Cleans \r\n6 Push Jerks \r\nthen\r\nMax reps Wallballs in Time Remaining\r\nrest 4:00\r\nAMRAP 4:\r\n1 round:\r\n12 Deadlifts 70/50\r\n9 Hang Power Cleans 70/50\r\n6 Push Jerks 70/50\r\nthen\r\nMaxrep Wallballs in Time Remaining"
+  },
+  {
+    title: "#8",
+    warmup: "",
+    main: "\t\r\n10 min to find a heavy single squat snatch\r\nE2M x 6 (12min)\r\n3 Squat Snatch @ 80 %",
+    secondary: "CrossFit Games Open 11.3\r\nAs many reps in 5 mins as you can of:\r\nSquat Clean, 75/50kg\r\nJerk, 75/50kg"
+  },
+  {
+    title: "#9",
+    warmup: "",
+    main: "1RM Split Jerk",
+    secondary: "Fatbar Grace\r\n30 Clean and Jerk 60/42,5"
+  }
+]
