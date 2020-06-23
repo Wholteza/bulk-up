@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme: Theme) =>
     appBar: {
       paddingTop: 20,
     },
+    groupText: {
+      backgroundColor: "#CCCCCC"
+    }
   })
 );
 
@@ -50,10 +53,10 @@ const App: React.FC = () => {
   const classes = useStyles();
   const renderWorkout = (workout: Workout): JSX.Element => {
     const weight: string = workout.bodyWeight
-      ? "With your body as weight"
+      ? "With your bodyweight"
       : workout.repetitionMaximum
-      ? "With repetition maximum weight"
-      : "With your usual weight";
+        ? "With repetition maximum weight"
+        : "With your usual weight";
     return (
       <div className={classes.workout}>
         <Typography
@@ -62,13 +65,6 @@ const App: React.FC = () => {
           className={classes.workoutText}
         >
           {workout.type} {workout.reps} reps
-        </Typography>
-        <Typography
-          variant="button"
-          display="block"
-          className={classes.workoutText}
-        >
-          {weight}
         </Typography>
         {workout.time && (
           <Typography
@@ -98,6 +94,13 @@ const App: React.FC = () => {
               {m}
             </Typography>
           ))}
+        <Typography
+          variant="button"
+          display="block"
+          className={classes.workoutText}
+        >
+          {weight}
+        </Typography>
         {workout.link && (
           <Typography
             variant="button"
@@ -114,8 +117,8 @@ const App: React.FC = () => {
   const renderGroup = (group: Group): JSX.Element => {
     return (
       <>
-        <Typography variant="h6">
-          {group.sets} {group.sets > 1 ? "sets" : "set"}
+        <Typography variant="h6" className={classes.groupText}>
+          {group.sets} {group.sets > 1 ? "SETS" : "SET"}
         </Typography>
         {group.workouts.map(renderWorkout)}
       </>
@@ -127,7 +130,7 @@ const App: React.FC = () => {
 
   const renderDay = (day: Day): JSX.Element => {
     return (
-      <Grid item xs={12} md={6} lg={3}>
+      <Grid item xs={12} md={6} lg={4}>
         <Paper key={day.title} className={classes.paper} elevation={1}>
           <Typography variant="h1">{day.title}</Typography>
           {day.main && (
@@ -160,7 +163,6 @@ const App: React.FC = () => {
           <Typography variant="h6" className={classes.title}>
             Bulk Up
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
       <Container className={classes.appBar}>

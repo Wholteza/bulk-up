@@ -1,6 +1,240 @@
 import { Day, WorkoutType, Modifiers } from "./types";
+import { withTheme } from "@material-ui/core";
 
 export const days: Day[] = [
+  {
+    title: "ZM#1",
+    secondary: [
+      {
+        sets: 3,
+        workouts: [{
+          type: WorkoutType.BenchPress,
+          reps: 10,
+        }]
+      },
+      {
+        sets: 3,
+        workouts: [{
+          type: WorkoutType.InverseRow,
+          reps: 10
+        }]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Squats,
+            reps: 10,
+            modifiers: [Modifiers.WithBarbellOnShoulders]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Superman,
+            reps: 10,
+            modifiers: [
+              Modifiers.On45DegreeBench,
+              Modifiers.WithDumbells
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.SitUp,
+            reps: 15,
+            bodyWeight: true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "ZM#2",
+    secondary: [
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Deadlift,
+            reps: 10
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.BenchPress,
+            reps: 10,
+            modifiers: [
+              Modifiers.On45DegreeBench
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.CalfRaise,
+            reps: 20,
+            modifiers: [
+              Modifiers.WithBarbellOnShoulders
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.BackExtension,
+            reps: 15,
+            modifiers: [
+              Modifiers.OnBench
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.SideLatheralRaise,
+            reps: 10,
+            modifiers: [Modifiers.WithDumbells]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Chins,
+            reps: 999,
+            bodyWeight: true,
+            modifiers: [Modifiers.AsManyAsYouCanDo, Modifiers.OptionalRubberBand]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "ZM#3",
+    secondary: [
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.BicepCurl,
+            reps: 10,
+            modifiers: [Modifiers.WithBarbell,
+            Modifiers.Standing]
+          },
+          {
+            type: WorkoutType.BicepCurl,
+            reps: 10,
+            modifiers: [
+              Modifiers.WithBarbell,
+              Modifiers.Standing,
+              Modifiers.LeaningForward
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.BicepCurl,
+            reps: 10,
+            modifiers: [
+              Modifiers.WithDumbells,
+              Modifiers.Sitting,
+              Modifiers.EveryOtherHand,
+              Modifiers.WithRotation
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.BicepCurl,
+            reps: 10,
+            modifiers: [
+              Modifiers.WithDumbells,
+              Modifiers.Sitting,
+              Modifiers.ElbowAgainstLeg,
+              Modifiers.OneArmAtATime
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.TricepExtension,
+            reps: 10,
+            modifiers: [
+              Modifiers.WithDumbells,
+              Modifiers.BehindHead,
+              Modifiers.LyingDown,
+              Modifiers.OnBench,
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.ShoulderPress,
+            reps: 10,
+            modifiers: [
+              Modifiers.WithDumbells,
+              Modifiers.Sitting,
+              Modifiers.OnBench
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Shrugs,
+            reps: 12,
+            modifiers: [
+              Modifiers.WithKettleBells,
+              Modifiers.Standing
+            ]
+          }
+        ]
+      },
+      {
+        sets: 3,
+        workouts: [
+          {
+            type: WorkoutType.Lunges,
+            reps: 16,
+            modifiers: [
+              Modifiers.Walking,
+              Modifiers.WithKettleBells
+            ]
+          }
+        ]
+      }
+    ]
+  },
   {
     title: "#1",
     main: [
