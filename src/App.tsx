@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import { days } from "./data";
 import "./App.css";
 import { Day, Workout, Group } from "./types";
 import {
@@ -15,8 +14,10 @@ import {
   Toolbar,
   IconButton,
   Button,
+  Link,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import days from "./workouts";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -44,8 +45,8 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: 20,
     },
     groupText: {
-      backgroundColor: "#CCCCCC"
-    }
+      backgroundColor: "#CCCCCC",
+    },
   })
 );
 
@@ -55,8 +56,8 @@ const App: React.FC = () => {
     const weight: string = workout.bodyWeight
       ? "With your bodyweight"
       : workout.repetitionMaximum
-        ? "With repetition maximum weight"
-        : "With your usual weight";
+      ? "With repetition maximum weight"
+      : "With your usual weight";
     return (
       <div className={classes.workout}>
         <Typography
@@ -102,13 +103,14 @@ const App: React.FC = () => {
           {weight}
         </Typography>
         {workout.link && (
-          <Typography
+          <Link
             variant="button"
             display="block"
             className={classes.workoutText}
+            href={workout.link}
           >
-            How to
-          </Typography>
+            Workout instruction video
+          </Link>
         )}
       </div>
     );
@@ -140,7 +142,7 @@ const App: React.FC = () => {
             </>
           )}
           <div className="secondary">
-            <Typography variant="h2">WotD</Typography>
+            <Typography variant="h2">Workout</Typography>
             {renderGroupArray(day.secondary)}
           </div>
         </Paper>

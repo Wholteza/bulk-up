@@ -10,20 +10,23 @@ export enum WorkoutType {
   HangPowerClean = "Hang Power Clean",
   RopeClimb = "Rope Climb",
   BenchPress = "Bench Press",
-  InverseRow = "Inverse Row with Barbell",
-  Squats = "Squat",
-  Superman = "Superman",
+  BentOverRowWithBarbell = "Bent Over Row with Barbell",
+  BarbellBackSquat = "Squat",
+  LyingDumbellFrontRaise = "Superman",
   SitUp = "Sit-Up",
   CalfRaise = "Calf Raise",
   BackExtension = "Back Extension",
-  SideLatheralRaise = "Side Latheral Raise",
-  Chins = "Chins",
+  LaterialRaise = "Side Latheral Raise",
+  PullUps = "Pull Ups",
   BicepCurl = "Bicep Curl",
   TricepExtension = "Tricep Extension",
   ShoulderPress = "ShoulderPress",
   Shrugs = "Shrugs",
-  Lunges = "Lunges"
-  
+  Lunges = "Lunges",
+  LegRaises = "Leg Raises",
+  CleanAndPress = "Clean and Press",
+  ConcentrationCurl = "Concentration Curl",
+  TBarRow = "T-Bar Row",
 }
 
 export enum Modifiers {
@@ -36,7 +39,7 @@ export enum Modifiers {
   OptionalRubberBand = "Optional Rubber Band",
   Standing = "Standing",
   Sitting = "Sitting",
-  EveryOtherHand = "Every Other Hand",
+  AlternatingHands = "Alternating Hands",
   OneArmAtATime = "One Arm At A Time",
   WithRotation = "With Rotation",
   LeaningForward = "Leaning Forward",
@@ -45,7 +48,10 @@ export enum Modifiers {
   LyingDown = "Lying down",
   BehindHead = "Behind Head",
   WithKettleBells = "With Kettlebells",
-  Walking = "Walking"
+  Walking = "Walking",
+  LiftOneEndOfTheBarbell = "Lift One End Of the Barbell",
+  OptionalUseCableMachineGrip = "Optional Use Narrow Grip From Cable Machine",
+  OnGHD = "On GHD",
 }
 
 export type Workout = {
