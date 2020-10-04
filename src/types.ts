@@ -12,7 +12,7 @@ export enum WorkoutType {
   BenchPress = "Bench Press",
   BentOverRowWithBarbell = "Bent Over Row with Barbell",
   BarbellBackSquat = "Squat",
-  LyingDumbellFrontRaise = "Superman",
+  LyingDumbellFrontRaise = "Lying Dumbell Front Raise",
   SitUp = "Sit-Up",
   CalfRaise = "Calf Raise",
   BackExtension = "Back Extension",
