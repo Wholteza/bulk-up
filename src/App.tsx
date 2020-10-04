@@ -54,7 +54,7 @@ const App: React.FC = () => {
   const classes = useStyles();
   const renderWorkout = (workout: Workout): JSX.Element => {
     const weight: string = workout.bodyWeight
-      ? "With your bodyweight"
+      ? "With your body weight"
       : workout.repetitionMaximum
       ? "With repetition maximum weight"
       : "With your usual weight";

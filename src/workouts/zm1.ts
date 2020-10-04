@@ -1,7 +1,7 @@
 import { Day, Modifiers, WorkoutType } from "../types";
 
 const workout: Day = {
-  title: "Workout 1",
+  title: "1",
   secondary: [
     {
       sets: 3,
