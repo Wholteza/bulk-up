@@ -163,7 +163,7 @@ const App: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Bulk Up
+            Workout
           </Typography>
         </Toolbar>
       </AppBar>
