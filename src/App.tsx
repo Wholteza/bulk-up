@@ -1,8 +1,7 @@
-import React, { useMemo } from "react";
+import React from "react";
 import "./App.css";
 import { Day, Workout, Group } from "./types";
 import {
-  Card,
   Typography,
   Grid,
   Paper,
@@ -13,7 +12,6 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Button,
   Link,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
