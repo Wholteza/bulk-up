@@ -29,24 +29,24 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Setup Node
+      - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
           
-      - name: NPM Install
-        run: npm install
-     
-      - name: NPM Build
-        run: npm run build
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
       
-      - name: Upload to blob storage
+      - name: upload to blob storage
         uses: azure/CLI@v1
         with:
           azcliversion: 2.0.72
           inlineScript: |
               az storage blob upload-batch --account-name bulkupzackedev -d '$web' -s ./build
-      - name: Purge CDN endpoint
+              
+      - name: purge CDN endpoint
         uses: azure/CLI@v1
         with:
           azcliversion: 2.0.72
